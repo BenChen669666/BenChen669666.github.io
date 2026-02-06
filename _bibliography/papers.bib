@@ -1,115 +1,65 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
+@unpublished{chen2025privacy_recsys,
+  abbr        = {WP},
+  title       = {Impact of Data Privacy Regulations on Recommender Systems Performance},
+  author      = {Chen, Liben and Zhou, Meizi and Song, Yicheng and Adomavicius, Gediminas},
+  year        = {2025},
+  abstract    = {Data privacy regulations empower consumers to control the collection of their personal data. A significant consequence of these regulations is their effect on various data-driven business solutions, especially on personalization technologies and recommender systems. We investigate the potential impacts of diverse real-world data privacy practices (that can be adopted by firms in response to various data privacy regulations) on the recommender systems performance. We also examine how these impacts vary across different personalization contexts and applications. In particular, we distinguish between scenarios where the user population exhibits more stable vs. more dynamic (i.e., changing) preferences, as these scenarios often represent distinctly different recommendation settings. We use a simulation framework, carefully seeded with real-world data, for a comprehensive evaluation of the recommender system performance under numerous scenarios, such as different recommendation algorithms, different data privacy practices, different degrees of users' preference dynamics, etc. Extensive computational experiments uncover several robust performance patterns for different data privacy practices and highlight substantial differences between recommendation settings with stable vs. changing user preferences. Furthermore, building upon the comprehensive findings from our computational experiments, we propose flexible, parameterizable data privacy practice designs based on the notion of revelation protection. The proposed approach is designed to provide an effective balance between personalization performance and privacy considerations, as demonstrated using extensive simulation experiments. The findings of this study have significant implications for the design of privacy-aware recommender systems in the context of contemporary data privacy regulations. The findings can also be informative to policymakers for understanding the practical implications of various data privacy practices and for designing future policies.},
+  note        = {Working Paper},
+  selected    = {true},
+  bibtex_show = {true}
 }
 
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+@unpublished{chen2025echoes,
+  abbr        = {WP},
+  title       = {Echoes of Manipulation: The Reinforcing Effect of Preference Bias on External Perturbations in Recommender Systems},
+  author      = {Chen, Liben and Zhou, Meizi and Zhang, Jingjing and Adomavicius, Gediminas},
+  year        = {2025},
+  abstract    = {Preference bias is a well-established phenomenon in recommender systems (RS), where the system-predicted rating that the user observes as part of the item recommendation (i.e., before consuming the item) ends up systematically impacting the self-reported preference rating that a user provides as feedback after consuming the item. This paper investigates how user preference bias amplifies and prolongs the adverse effects of external perturbations (e.g., shilling attacks) in RS. While prior research has treated preference bias and external manipulations as separate phenomena, we demonstrate through a series of agent-based simulation experiments that their interaction produces self-reinforcing adverse effects. Specifically, we simulate perturbation scenarios where a small subset of items is temporarily promoted through artificial rating inflation. We systematically vary user preference bias levels, the proportion of perturbed users and items, and the duration of perturbation across multiple experimental conditions. Our experiments reveal that even small-scale and transient perturbations can have lasting consequences on RS performance, especially when user preference bias is strong. Perturbed items continue to dominate recommendation lists long after the external shock ends, as biased user feedback reinforces and sustains their artificial prominence. This creates prolonged degradation of predictive accuracy as well as reduced relevance and diversity of consumed items. Importantly, the adverse effects are consistently present across different recommendation algorithms and rating datasets. We also find that unpopular and content-wise common items are especially susceptible to these adverse effects. We further demonstrate these adverse effects under different perturbation strategies. These findings have significant implications for RS design, as they underscore the potential limitations of traditional perturbation defenses (i.e., that may overlook the role of user preference bias) and highlight the need for bias-aware robustness and mitigation frameworks.},
+  note        = {Working Paper},
+  selected    = {true},
+  bibtex_show = {true}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+@unpublished{chen2025selfconsistent,
+  abbr        = {WP},
+  title       = {Self-Consistent Machine Learning: An Ensemble Smoothing Approach Based on Prediction Confidence},
+  author      = {Chen, Liben and Yang, Mochen and Adomavicius, Gediminas},
+  year        = {2025},
+  abstract    = {Suppose a machine learning (ML) model is re-trained after the arrival of some new data; however, all the new data instances are such that the model's prior predictions for them were perfectly accurate. Are the predictions of the updated model consistent with its prior predictions? Such self-consistency of an ML system is an important factor for users' acceptance of and trust in the ML systems. In this study, we design an ensemble approach for improving the self-consistency of the ML system, based on a smoothing technique. Smoothing adds a pseudo-labeled dataset with the model's own predictions into the original training data with an explicit goal of improving self-consistency. Our ensemble approach uses smoothing in a prediction-confidence-aware manner and significantly outperforms generic smoothing methods in terms of both self-consistency and predictive performance. This study contributes to understanding the nuances of self-consistency enhancement in ML systems and provides practical insights for designing more robust and trustworthy decision support systems.},
+  note        = {Working Paper},
+  selected    = {true},
+  bibtex_show = {true}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
+@unpublished{chen2025algorithmic_protection,
+  abbr        = {WP},
+  title       = {Algorithmic Data Protection for Recommender Systems},
+  author      = {Chen, Liben and Adomavicius, Gediminas},
+  year        = {2025},
+  note        = {Working Paper},
+  selected    = {true},
+  bibtex_show = {true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
+@unpublished{chen2025reliable_policy,
+  abbr        = {WP},
+  title       = {Reliable Policy-Based Governance of Automated/Augmented Decision-Making Systems},
+  author      = {Chen, Liben and Yang, Mochen and Adomavicius, Gediminas},
+  year        = {2025},
+  note        = {Working Paper},
+  selected    = {true},
+  bibtex_show = {true}
 }
 
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+@unpublished{chen2025privacy_mirage,
+  abbr        = {WP},
+  title       = {Self-Managed Privacy, Privacy Externality, and Privacy Mirage},
+  author      = {Chen, Liben and Adomavicius, Gediminas},
+  year        = {2025},
+  note        = {Working Paper},
+  selected    = {true},
+  bibtex_show = {true}
 }
