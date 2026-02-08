@@ -30,3 +30,7 @@ latest_posts:
 I am a Ph.D. candidate in [Information & Decision Sciences](https://carlsonschool.umn.edu/departments/information-decision-sciences-department) at [Carlson School of Management](https://carlsonschool.umn.edu/), [University of Minnesota](https://twin-cities.umn.edu/). My current research focuses on **Trustworthy AI**. I design AI systems that are not only **accurate** but also **privacy-respecting**, **reliable**, and **robust**.
 
 Before joining the Carlson School of Management, I obtained my M.Sc. in Data Science from [New York University](https://www.nyu.edu/) and my bachelor's degree in Information Systems from the [City University of Hong Kong](https://www.cityu.edu.hk/).
+
+<div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+  <img src="/assets/img/personal_seal.png" alt="Personal Seal" style="width: 60px; height: 60px; opacity: 0.9; margin-right: 40px;">
+</div>
