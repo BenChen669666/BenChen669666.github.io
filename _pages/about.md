@@ -2,7 +2,9 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. Candidate, <a href='https://carlsonschool.umn.edu/'>Carlson School of Management</a>, <a href='https://twin-cities.umn.edu/'>University of Minnesota</a>
+subtitle: >
+  Ph.D. Candidate, <a href='https://carlsonschool.umn.edu/departments/information-decision-sciences'>Information &amp; Decision Sciences</a><br>
+  <a href='https://carlsonschool.umn.edu/'>Carlson School of Management</a>, <a href='https://twin-cities.umn.edu/'>University of Minnesota</a>
 
 profile:
   align: right
@@ -27,7 +29,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Ph.D. candidate in [Information & Decision Sciences](https://carlsonschool.umn.edu/departments/information-decision-sciences-department) at [Carlson School of Management](https://carlsonschool.umn.edu/), [University of Minnesota](https://twin-cities.umn.edu/). My current research focuses on **Trustworthy AI**. I design AI systems that are not only **accurate** but also **policy-compliant**, **reliable**, and **robust**.
+My current research focuses on **Trustworthy AI**. I design AI systems that are not only **accurate** but also **policy-compliant**, **reliable**, and **robust**.
 
 Before joining the Carlson School of Management, I obtained my M.Sc. in Data Science from [New York University](https://www.nyu.edu/) and my bachelor's degree in Information Systems from the [City University of Hong Kong](https://www.cityu.edu.hk/).
 
