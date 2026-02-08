@@ -39,7 +39,7 @@ Before joining the Carlson School of Management, I obtained my M.Sc. in Data Sci
     padding-top: 0 !important;
   }
   .profile img {
-    max-height: 210px;
+    max-height: 240px;
     width: auto !important;
     object-fit: contain;
   }
