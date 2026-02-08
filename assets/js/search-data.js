@@ -23,7 +23,40 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-welcome-to-my-personal-academic-website-i-am-a-ph-d-candidate-in-information-systems-at-the-carlson-school-of-management-university-of-minnesota",
+        },{id: "post-summary-of-allen-zhu-39-s-icml-2024-tutorial-on-physics-of-large-language-models",
+        
+          title: "Summary of Allen-Zhu&#39;s ICML 2024 Tutorial on Physics of Large Language Models",
+        
+        description: "Key insights from Allen-Zhu&#39;s tutorial on the underlying mechanisms of LLMs",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/physics-of-llms-icml-tutorial/";
+          
+        },
+      },{id: "post-digest-on-embedded-power-chinese-government-and-economic-development",
+        
+          title: "Digest on Embedded Power: Chinese Government and Economic Development",
+        
+        description: "A digest on Embedded Power by Lan Xiaohuan, examining the unique characteristics of the Chinese economy",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/chinese-government-economic-development/";
+          
+        },
+      },{id: "post-a-random-walk-in-the-jungle-of-the-gene",
+        
+          title: "A Random Walk in the Jungle of the Gene",
+        
+        description: "A review on The Gene&amp;#58; An Intimate History by Siddhartha Mukherjee",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/random-walk-jungle-gene/";
+          
+        },
+      },{id: "news-welcome-to-my-personal-academic-website-i-am-a-ph-d-candidate-in-information-systems-at-the-carlson-school-of-management-university-of-minnesota",
           title: 'Welcome to my personal academic website! I am a Ph.D. candidate in Information...',
           description: "",
           section: "News",},{id: "projects-algorithmic-decision-making",
