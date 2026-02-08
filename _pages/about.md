@@ -31,6 +31,11 @@ I am a Ph.D. candidate in [Information & Decision Sciences](https://carlsonschoo
 
 Before joining the Carlson School of Management, I obtained my M.Sc. in Data Science from [New York University](https://www.nyu.edu/) and my bachelor's degree in Information Systems from the [City University of Hong Kong](https://www.cityu.edu.hk/).
 
-<div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+<style>
+@media (max-width: 768px) {
+  .personal-seal { display: none !important; }
+}
+</style>
+<div class="personal-seal" style="display: flex; justify-content: flex-end; margin-top: 10px;">
   <img src="/assets/img/personal_seal.png" alt="Personal Seal" style="width: 60px; height: 60px; opacity: 0.9; margin-right: 40px;">
 </div>
