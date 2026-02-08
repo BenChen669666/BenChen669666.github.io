@@ -25,7 +25,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-The promise of AI lies not just in what it can do, but in whether we can trust it to do so responsibly. My research explores **Trustworthy AI** — I design AI systems that are not only **accurate** but also **policy-compliant**, **reliable**, and **robust**.
+The promise of AI lies not just in what it can do, but in whether we can trust it to do so responsibly. My research explores **Trustworthy AI** — I study and design AI systems that are not only **accurate** but also **policy-compliant**, **reliable**, and **robust**.
 
 Before joining the Carlson School of Management, I obtained my M.Sc. in Data Science from [New York University](https://www.nyu.edu/) and my bachelor's degree in Information Systems from the [City University of Hong Kong](https://www.cityu.edu.hk/).
 
