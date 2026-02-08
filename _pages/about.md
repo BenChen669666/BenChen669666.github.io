@@ -10,10 +10,6 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>CSOM 4-161</p>
-    <p>321 19th Avenue South</p>
-    <p>Minneapolis, MN 55455</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -36,6 +32,17 @@ Before joining the Carlson School of Management, I obtained my M.Sc. in Data Sci
 <style>
 @media (max-width: 768px) {
   .personal-seal { display: none !important; }
+}
+@media (min-width: 576px) {
+  .profile {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  .profile img {
+    max-height: 210px;
+    width: auto !important;
+    object-fit: contain;
+  }
 }
 </style>
 <div class="personal-seal" style="display: flex; justify-content: flex-end; margin-top: 10px;">
