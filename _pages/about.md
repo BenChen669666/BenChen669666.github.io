@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: Home
 permalink: /
 subtitle: >
   Ph.D. Candidate, <a href='https://carlsonschool.umn.edu/departments/information-decision-sciences'>Information &amp; Decision Sciences</a><br>
