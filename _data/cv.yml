@@ -4,7 +4,7 @@ cv:
   email: chen7954@umn.edu
   location: Minneapolis, MN
   image: ""
-  summary: Ph.D. Candidate in Information Systems at Carlson School of Management, University of Minnesota. Research focuses on algorithmic decision-making, trustworthy AI, and personalization technologies.
+  summary: Ph.D. Candidate in Information & Decision Sciences at Carlson School of Management, University of Minnesota. Research focuses on Trustworthy AI, designing AI systems that are accurate, privacy-respecting, reliable, and robust.
 
   social_networks:
     - network: LinkedIn
@@ -22,13 +22,13 @@ cv:
       - institution: University of Minnesota
         location: Minneapolis, MN
         url: https://carlsonschool.umn.edu/
-        area: Information Systems
+        area: Information & Decision Sciences
         studyType: Ph.D.
         start_date: 2022
         end_date: 2027 (Expected)
         highlights:
           - "Carlson School of Management"
-          - "Research focus: Algorithmic decision-making, Trustworthy AI, Personalization Technologies"
+          - "Research focus: Trustworthy AI, Privacy-Respecting AI, Reliable and Robust AI Systems"
 
       - institution: New York University
         location: New York, NY
