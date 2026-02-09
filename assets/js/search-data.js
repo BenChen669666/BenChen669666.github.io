@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Curriculum Vitae of Ben (Liben) Chen",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
         },{id: "post-summary-of-allen-zhu-39-s-icml-2024-tutorial-on-physics-of-large-language-models",
         
           title: "Summary of Allen-Zhu&#39;s ICML 2024 Tutorial on Physics of Large Language Models",
