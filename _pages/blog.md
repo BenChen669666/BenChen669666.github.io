@@ -70,12 +70,16 @@ pagination:
                     {% else %}
                       {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
                     {% endif %}
-                    {% assign year = post.date | date: "%Y" %}
-
                     <p class="post-meta">
-                      {{ read_time }} min read &nbsp; &middot; &nbsp;
-                      <a href="{{ year | prepend: '/blog/' | relative_url }}">
-                        <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+                      {% if post.categories.size > 0 %}
+                        <a href="{{ post.categories[0] | slugify | prepend: '/blog/category/' | relative_url }}">
+                          <i class="fa-solid fa-tag fa-sm"></i> {{ post.categories[0] }}</a>
+                        {% if post.tags.size > 0 %}&nbsp; &middot; &nbsp;{% endif %}
+                      {% endif %}
+                      {% if post.tags.size > 0 %}
+                        <a href="{{ post.tags[0] | slugify | prepend: '/blog/tag/' | relative_url }}">
+                          <i class="fa-solid fa-hashtag fa-sm"></i> {{ post.tags[0] }}</a>
+                      {% endif %}
                     </p>
                   </div>
                 </div>
@@ -105,7 +109,6 @@ pagination:
     {% else %}
       {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
     {% endif %}
-    {% assign year = post.date | date: "%Y" %}
     {% assign tags = post.tags | join: "" %}
     {% assign categories = post.categories | join: "" %}
 
@@ -130,38 +133,16 @@ pagination:
       </h3>
       <p>{{ post.description }}</p>
       <p class="post-meta">
-        {{ read_time }} min read &nbsp; &middot; &nbsp;
-        {{ post.date | date: '%B %d, %Y' }}
-        {% if post.external_source %}
-        &nbsp; &middot; &nbsp; {{ post.external_source }}
+        {% if categories != "" %}
+          <a href="{{ post.categories[0] | slugify | prepend: '/blog/category/' | relative_url }}">
+            <i class="fa-solid fa-tag fa-sm"></i> {{ post.categories[0] }}</a>
+          {% if tags != "" %}&nbsp; &middot; &nbsp;{% endif %}
+        {% endif %}
+        {% if tags != "" %}
+          <a href="{{ post.tags[0] | slugify | prepend: '/blog/tag/' | relative_url }}">
+            <i class="fa-solid fa-hashtag fa-sm"></i> {{ post.tags[0] }}</a>
         {% endif %}
       </p>
-      <p class="post-tags">
-        <a href="{{ year | prepend: '/blog/' | relative_url }}">
-          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
-
-          {% if tags != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for tag in post.tags %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-              {% endfor %}
-          {% endif %}
-
-          {% if categories != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for category in post.categories %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-              {% endfor %}
-          {% endif %}
-    </p>
 
 {% if post.thumbnail %}
 

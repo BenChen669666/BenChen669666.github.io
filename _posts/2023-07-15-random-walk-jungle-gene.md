@@ -3,7 +3,7 @@ layout: post
 title: "A Random Walk in the Jungle of the Gene"
 date: 2023-07-15
 description: A review on The Gene&#58; An Intimate History by Siddhartha Mukherjee
-tags: [book-review, science]
+tags: [biology]
 categories: [reflections]
 related_posts: false
 ---

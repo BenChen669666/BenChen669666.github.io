@@ -3,7 +3,7 @@ layout: post
 title: "Digest on Embedded Power: Chinese Government and Economic Development"
 date: 2023-08-01
 description: A digest on Embedded Power by Lan Xiaohuan, examining the unique characteristics of the Chinese economy
-tags: [economics, book-review]
+tags: [economics]
 categories: [reflections]
 related_posts: false
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Summary of Allen-Zhu's ICML 2024 Tutorial on Physics of Large Language Models"
 date: 2024-07-20
 description: Key insights from Allen-Zhu's tutorial on the underlying mechanisms of LLMs
-tags: [machine-learning, LLM]
+tags: [LLM]
 categories: [research-notes]
 related_posts: false
 ---
