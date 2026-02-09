@@ -5,8 +5,5 @@ title: CV
 nav: true
 nav_order: 2
 cv_pdf: /assets/pdf/Academic_CV.pdf
-cv_format: rendercv
 description: Curriculum Vitae of Ben (Liben) Chen
-toc:
-  sidebar: left
 ---
