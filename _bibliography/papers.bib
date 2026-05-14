@@ -11,6 +11,16 @@
   selected    = {true}
 }
 
+@unpublished{chen2025echoes,
+  abbr        = {R&R},
+  title       = {Echoes of Manipulation: The Reinforcing Effect of Preference Bias on External Perturbations in Recommender Systems},
+  author      = {Chen, Liben and Zhou, Meizi and Zhang, Jingjing and Adomavicius, Gediminas},
+  year        = {2024},
+  abstract    = {Preference bias is a well-established phenomenon in recommender systems (RS), where the system-predicted rating that the user observes as part of the item recommendation (i.e., before consuming the item) ends up systematically impacting the self-reported preference rating that a user provides as feedback after consuming the item. This paper investigates how user preference bias amplifies and prolongs the adverse effects of external perturbations (e.g., shilling attacks) in RS. While prior research has treated preference bias and external manipulations as separate phenomena, we demonstrate through a series of agent-based simulation experiments that their interaction produces self-reinforcing adverse effects. Specifically, we simulate perturbation scenarios where a small subset of items is temporarily promoted through artificial rating inflation. We systematically vary user preference bias levels, the proportion of perturbed users and items, and the duration of perturbation across multiple experimental conditions. Our experiments reveal that even small-scale and transient perturbations can have lasting consequences on RS performance, especially when user preference bias is strong. Perturbed items continue to dominate recommendation lists long after the external shock ends, as biased user feedback reinforces and sustains their artificial prominence. This creates prolonged degradation of predictive accuracy as well as reduced relevance and diversity of consumed items. Importantly, the adverse effects are consistently present across different recommendation algorithms and rating datasets. We also find that unpopular and content-wise common items are especially susceptible to these adverse effects. We further demonstrate these adverse effects under different perturbation strategies. These findings have significant implications for RS design, as they underscore the potential limitations of traditional perturbation defenses (i.e., that may overlook the role of user preference bias) and highlight the need for bias-aware robustness and mitigation frameworks.},
+  note        = {Under Major Revision at <b>INFORMS Journal on Computing</b>},
+  selected    = {true}
+}
+
 @unpublished{chen2025selfconsistent,
   abbr        = {UR},
   title       = {Self-Consistent Machine Learning: An Ensemble Smoothing Approach Based on Prediction Confidence},
@@ -18,16 +28,6 @@
   year        = {2023},
   abstract    = {Suppose a machine learning (ML) model is re-trained after the arrival of some new data; however, all the new data instances are such that the model's prior predictions for them were perfectly accurate. Are the predictions of the updated model consistent with its prior predictions? Such self-consistency of an ML system is an important factor for users' acceptance of and trust in the ML systems. In this study, we design an ensemble approach for improving the self-consistency of the ML system, based on a smoothing technique. Smoothing adds a pseudo-labeled dataset with the model's own predictions into the original training data with an explicit goal of improving self-consistency. Our ensemble approach uses smoothing in a prediction-confidence-aware manner and significantly outperforms generic smoothing methods in terms of both self-consistency and predictive performance. This study contributes to understanding the nuances of self-consistency enhancement in ML systems and provides practical insights for designing more robust and trustworthy decision support systems.},
   note        = {Under Review at <b>ACM Transactions on Knowledge Discovery from Data</b>},
-  selected    = {true}
-}
-
-@unpublished{chen2025echoes,
-  abbr        = {UR},
-  title       = {Echoes of Manipulation: The Reinforcing Effect of Preference Bias on External Perturbations in Recommender Systems},
-  author      = {Chen, Liben and Zhou, Meizi and Zhang, Jingjing and Adomavicius, Gediminas},
-  year        = {2024},
-  abstract    = {Preference bias is a well-established phenomenon in recommender systems (RS), where the system-predicted rating that the user observes as part of the item recommendation (i.e., before consuming the item) ends up systematically impacting the self-reported preference rating that a user provides as feedback after consuming the item. This paper investigates how user preference bias amplifies and prolongs the adverse effects of external perturbations (e.g., shilling attacks) in RS. While prior research has treated preference bias and external manipulations as separate phenomena, we demonstrate through a series of agent-based simulation experiments that their interaction produces self-reinforcing adverse effects. Specifically, we simulate perturbation scenarios where a small subset of items is temporarily promoted through artificial rating inflation. We systematically vary user preference bias levels, the proportion of perturbed users and items, and the duration of perturbation across multiple experimental conditions. Our experiments reveal that even small-scale and transient perturbations can have lasting consequences on RS performance, especially when user preference bias is strong. Perturbed items continue to dominate recommendation lists long after the external shock ends, as biased user feedback reinforces and sustains their artificial prominence. This creates prolonged degradation of predictive accuracy as well as reduced relevance and diversity of consumed items. Importantly, the adverse effects are consistently present across different recommendation algorithms and rating datasets. We also find that unpopular and content-wise common items are especially susceptible to these adverse effects. We further demonstrate these adverse effects under different perturbation strategies. These findings have significant implications for RS design, as they underscore the potential limitations of traditional perturbation defenses (i.e., that may overlook the role of user preference bias) and highlight the need for bias-aware robustness and mitigation frameworks.},
-  note        = {Under Major Revision at <b>INFORMS Journal on Computing</b>},
   selected    = {true}
 }
 
