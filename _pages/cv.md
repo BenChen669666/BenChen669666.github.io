@@ -4,6 +4,6 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 2
-cv_pdf: /assets/pdf/Academic_CV.pdf
+cv_pdf: /academic_cv/Academic_CV.pdf
 description: Curriculum Vitae of Ben (Liben) Chen
 ---
