@@ -43,8 +43,29 @@ jobs:
           done
           rm gh-md-toc
 
+      # gh-md-toc output is not Prettier-clean; without this, "Prettier code formatter" fails on the auto-commit.
+      - name: Setup Node.js for Prettier
+        if: steps.changed-files.outputs.any_changed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: package-lock.json
+
+      - name: Format markdown after TOC generation
+        if: steps.changed-files.outputs.any_changed == 'true'
+        env:
+          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        run: |
+          npm ci
+          for file in ${ALL_CHANGED_FILES}; do
+            if [[ "$file" == *.md ]]; then
+              npx prettier --write "$file"
+            fi
+          done
+
       - name: Commit changes
         if: steps.changed-files.outputs.any_changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5.0.1
         with:
-          commit_message: Auto update markdown TOC
+          commit_message: "Auto update markdown TOC (Prettier-aligned)"
