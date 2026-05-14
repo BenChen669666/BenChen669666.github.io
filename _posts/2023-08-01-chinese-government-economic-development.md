@@ -8,7 +8,7 @@ categories: [reflections]
 related_posts: false
 ---
 
-*A digest on* Embedded Power *by Lan Xiaohuan*
+_A digest on_ Embedded Power _by Lan Xiaohuan_
 
 ---
 
@@ -40,9 +40,9 @@ In the early stages of an imperfect market economy system, many resource allocat
 
 **2. Resource Misallocation**
 
-*a. Overcapacity.* The government is not a company. Private capital companies pursue profits, but local governments' investment goals are often to pursue GDP and tax revenue growth. On the one hand, since value-added tax (VAT) has always been China's largest source of tax revenue, the government naturally favors large-scale manufacturing (regardless of whether the products can be consumed by end users, as long as the products are produced and start circulating in the supply chain, the government can collect VAT). On the other hand, the excessive pursuit of GDP growth in the early stages of reform and opening up meant that local governments had no motivation to strengthen capacity regulation and adjustment for companies, leading to overcapacity.
+_a. Overcapacity._ The government is not a company. Private capital companies pursue profits, but local governments' investment goals are often to pursue GDP and tax revenue growth. On the one hand, since value-added tax (VAT) has always been China's largest source of tax revenue, the government naturally favors large-scale manufacturing (regardless of whether the products can be consumed by end users, as long as the products are produced and start circulating in the supply chain, the government can collect VAT). On the other hand, the excessive pursuit of GDP growth in the early stages of reform and opening up meant that local governments had no motivation to strengthen capacity regulation and adjustment for companies, leading to overcapacity.
 
-*b. Distorted Non-market Interest Rates.* Debts raised in the name of government investment are usually considered "low risk." Although the law does not explicitly guarantee that these debts will be repaid in case of default, people believe that these debts have implicit government guarantees. In fact, the default rate of urban investment bonds, for example, is indeed very low. Therefore, the market is very enthusiastic about this type of debt investment. However, the existence of such low-risk, high-yield anomalies like urban investment bonds causes excessive resources to be tilted towards them (squeezing out other debt investments). However, not all infrastructure and basic investments supported by urban investment bonds are high-quality investments, while the squeezed-out debt investments are not lacking in high-quality assets. The distorted interest rates of debts raised in the name of government investment lead to resource misallocation.
+_b. Distorted Non-market Interest Rates._ Debts raised in the name of government investment are usually considered "low risk." Although the law does not explicitly guarantee that these debts will be repaid in case of default, people believe that these debts have implicit government guarantees. In fact, the default rate of urban investment bonds, for example, is indeed very low. Therefore, the market is very enthusiastic about this type of debt investment. However, the existence of such low-risk, high-yield anomalies like urban investment bonds causes excessive resources to be tilted towards them (squeezing out other debt investments). However, not all infrastructure and basic investments supported by urban investment bonds are high-quality investments, while the squeezed-out debt investments are not lacking in high-quality assets. The distorted interest rates of debts raised in the name of government investment lead to resource misallocation.
 
 ---
 

@@ -10,6 +10,7 @@ category: research
 This research stream examines how AI systems interact with society, with a particular focus on healthcare applications and the role of public policy in shaping AI adoption and use.
 
 Key areas include:
+
 - AI in healthcare decision-making
 - Generative AI applications
 - Impact of public policies on AI systems

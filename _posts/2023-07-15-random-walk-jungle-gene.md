@@ -8,7 +8,7 @@ categories: [reflections]
 related_posts: false
 ---
 
-*A Review on* The Gene: An Intimate History *by Siddhartha Mukherjee*
+_A Review on_ The Gene: An Intimate History _by Siddhartha Mukherjee_
 
 ---
 
@@ -36,6 +36,6 @@ From this perspective, if humanity has only one optimal evolutionary strategy, i
 
 1. Humanity migrated from Africa to other parts of the world. African genetic diversity is richer than that of other populations around the world. The reason lies in the fact that with each migration, only a small portion of the genes were carried away. Africans not only retain all the original genes but also accumulate mutations over the long years that fundamentally ensure their genetic diversity.
 
-2. The *c-myc* gene is like a switch that controls whether mature specialized cells can revert to embryonic stem cells. This gene is like a switch that can stop aging as if humanity is on the verge of eternal youth. But this gene also controls cell proliferation, and unlimited proliferation means cancer. The most sinister disease and the most beautiful vision are unified in the same gene. The unity of contradictions is always fascinating.
+2. The _c-myc_ gene is like a switch that controls whether mature specialized cells can revert to embryonic stem cells. This gene is like a switch that can stop aging as if humanity is on the verge of eternal youth. But this gene also controls cell proliferation, and unlimited proliferation means cancer. The most sinister disease and the most beautiful vision are unified in the same gene. The unity of contradictions is always fascinating.
 
 3. "All diseases are genetic diseases."
