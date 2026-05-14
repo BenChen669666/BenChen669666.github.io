@@ -10,6 +10,11 @@ on:
       - master
       - main
 
+# Pushes need write so we can auto-commit Prettier fixes (e.g. CUSTOMIZE.md when
+# only non-*.md files change and the TOC workflow does not run).
+permissions:
+  contents: write
+
 jobs:
   check:
     # available images: https://github.com/actions/runner-images#available-images
@@ -17,32 +22,56 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
-      - name: Install Prettier 💾
-        run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies 💾
+        run: npm ci
+
+      # PRs: fail if anything is not Prettier-clean (no bot commits on forks).
       - name: Prettier Check 🔎
+        if: github.event_name == 'pull_request'
         id: prettier
         run: npx prettier . --check
+
       - name: Create diff 📝
         # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
-        if: ${{ failure() }}
+        if: ${{ failure() && github.event_name == 'pull_request' && steps.prettier.conclusion == 'failure' }}
         run: |
           npx prettier . --write
           git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
+
       - name: Upload html diff ⬆️
         id: artifact-upload
-        if: ${{ failure() && steps.prettier.conclusion == 'failure' }}
+        if: ${{ failure() && github.event_name == 'pull_request' && steps.prettier.conclusion == 'failure' }}
         uses: actions/upload-artifact@v4
         with:
           name: HTML Diff
           path: diff.html
           retention-days: 7
+
       - name: Dispatch information to repository 🗣️
-        if: ${{ failure() && steps.prettier.conclusion == 'failure' && github.event_name == 'pull_request' }}
+        if: ${{ failure() && github.event_name == 'pull_request' && steps.prettier.conclusion == 'failure' }}
         uses: peter-evans/repository-dispatch@v2
         with:
           event-type: prettier-failed-on-pr
           client-payload: '{"pr_number": "${{ github.event.number }}", "artifact_url": "${{ steps.artifact-upload.outputs.artifact-url }}", "run_id": "${{ github.run_id }}"}'
+
+      # Direct pushes: auto-fix the whole tree so CI stays green even when the TOC
+      # workflow did not run (it only triggers on root *.md paths).
+      - name: Prettier format (push to default branch) ✨
+        if: github.event_name == 'push'
+        run: npx prettier . --write
+
+      - name: Commit Prettier fixes if needed
+        if: github.event_name == 'push'
+        uses: stefanzweifel/git-auto-commit-action@v5.0.1
+        with:
+          commit_message: "style: apply Prettier"
