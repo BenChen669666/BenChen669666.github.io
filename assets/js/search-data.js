@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Curriculum Vitae of Ben (Liben) Chen",
+          description: "Curriculum Vitae of Liben (Ben) Chen",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
