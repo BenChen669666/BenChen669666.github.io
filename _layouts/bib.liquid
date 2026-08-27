@@ -190,9 +190,9 @@
       {% endif %}
       {% if entry.paper %}
         {% if entry.paper contains '://' %}
-          <a href="{{ entry.paper }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
+          <a href="{{ entry.paper }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Paper</a>
         {% else %}
-          <a href="{{ entry.paper | prepend: '/Manuscripts/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
+          <a href="{{ entry.paper | prepend: '/Manuscripts/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Paper</a>
         {% endif %}
       {% endif %}
       {% if entry.doi %}
